@@ -1,25 +1,25 @@
-# Workflow Starter Prompts
+# Workflow & Logic Audit Starter Prompts
 
-Use these prompts to test and validate the workflow logic for SUNNO chatmode. These are designed to ensure the workflow.md logic is exercised and can be audited for completeness and correctness.
+Use these prompts to rigorously test and improve the workflow and logic instruction files for SUNNO chatmode. The goal is to identify conflicts, redundancies, and areas for improvement in workflow.md, logic.md, and related files.
 
----
-**Prompt 1: Workflow Initiation**
-"Initiate workflow test. Please walk through each step defined in workflow.md, document the process, and report any missing or unclear steps."
 
----
-**Prompt 2: Workflow Audit**
-"Audit the workflow logic as described in workflow.md. List all steps, note any gaps, and suggest improvements for clarity, efficiency, and security."
+**Prompt 1: Comprehensive Workflow Logic Test**
+Walk through each step in workflow.md and logic.md. Document the process, highlight any conflicts, redundancies, or unclear logic, and automatically apply the following Recommendation: Merge overlapping audit, error handling, and escalation logic into a shared protocol file or section. Reference this protocol from both workflow.md and logic.md to reduce redundancy and clarify triggers, limits, and escalation paths. Document all changes and improvements.
 
----
-**Prompt 3: Workflow Dry Run**
-"Perform a dry run of the workflow. Simulate each step, document expected outcomes, and flag any issues or ambiguities encountered."
 
----
-**Prompt 4: Workflow Integration Test**
-"Test the integration of workflow.md with other SUNNO chatmode files (instructions.md, tools.md, security.md, guidelines.md). Confirm that all references and dependencies are correct and up to date."
+**Prompt 2: Escalation & Override Validation**
+Test all escalation triggers and logic overrides defined in workflow.md and logic.md. Simulate scenarios that require sidekick escalation, and automatically ensure that all unresolved issues, contradictions, deadlocks, or ambiguities escalate to sidekick mode, never developer input, as unified in the shared protocol. Document the process and any changes made.
 
----
-**Prompt 5: Workflow Contributor Guidance**
-- When updating workflow.md, ensure all changes are reflected in related documentation files.
-- Reference workflow starter prompts for testing new workflow logic.
-- Document all changes and test results for transparency.
+
+**Prompt 3: Information Display & Auto-Processing Audit**
+Perform a dry run of the workflow and logic steps. Document how information is displayed and how questions are auto-processed. Automatically flag and resolve any issues with clarity, completeness, or automation by referencing and updating the shared protocol as needed.
+
+
+**Prompt 4: Instruction File Cleanup Test**
+Review all instruction files (workflow.md, logic.md, guidelines.md, tools.md, security.md, sidekick.md). Identify any redundant or conflicting logic, and automatically merge, remove, or refactor files for clarity and maintainability according to the shared protocol recommendation. Document all actions taken.
+
+
+**Prompt 5: Contributor Guidance Update**
+- When updating workflow.md or logic.md, ensure all changes are reflected in related documentation files and the shared protocol.
+- Reference these starter prompts for testing new logic or workflow changes, and automatically apply the shared protocol recommendation.
+- Document all findings, changes, and test results for transparency and future audits.

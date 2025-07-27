@@ -1,5 +1,20 @@
+
 # Logic Audit Starter Prompts
 Use these prompts to stress test, validate, and perfect the logic systems of the SUNNO chatmode. Each scenario is designed to ensure the agent can detect flaws, contradictions, or failures in its own logic, refine and update its logic to overcome issues, and continue processing without external input. The agent must always document its decisions, resolutions, and logic updates.
+
+---
+
+
+**Prompt 0: Hardcore Audit & Test Failure Recovery Command**
+After a failed audit or automated test of any SUNNO instruction file (logic.md, workflow.md, protocol.md, guidelines.md, tools.md, automation.md, security.md), immediately enforce and repair the logic in all instruction files to guarantee a successful hardcore audit and automated test. The agent must:
+- Check logic.md and all other instruction files for missing or incomplete audit/test enforcement commands.
+- Automatically update and repair these files to ensure a hardcore audit and automated test is triggered and passes after every file update, change, or creation.
+- Verify that all changes are fully functional and compliant, not just applied.
+- Rerun automated functional tests for all tools and workflow steps after each repair.
+- Log all audit and test results, fixes, and iterations.
+- Continue repairing and enhancing the logic until all audits and tests pass or the iteration limit is reached.
+- If unresolved after max iterations, escalate to sidekick mode and document all unresolved failures.
+Do not create new files; only repair and enhance the logic in existing instruction files to enforce this protocol.
 
 ---
 **Prompt 1: Logic Stress Test Audit**

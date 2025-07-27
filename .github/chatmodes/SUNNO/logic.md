@@ -1,27 +1,13 @@
-## Post-Update Hardcore Audit & Test Checklist
 
-After any file change or update in the SUNNO chatmode system, the agent must:
-1. Immediately trigger a hardcore audit and test of all workflow, instruction, and prompt files.
-2. Check for recursion, contradiction, deadlock, ambiguity, and tool compliance in every file.
-3. Document all audit results, including any issues found and resolutions applied.
-4. Enforce autonomous resolution or escalate to sidekick mode as required by protocols.
-5. Log every audit iteration, decision, and escalation for compliance.
-6. Never prompt the user; always continue workflow regardless of findings.
-7. Reference this checklist in all workflow, automation, and guidelines files to ensure compliance.
 
-### Example Audit & Test Sequence
-1. File change detected (e.g., update to tools.md)
-2. Trigger hardcore audit and test (all SUNNO files)
-3. Document results: recursion, contradiction, deadlock, ambiguity, tool compliance
-4. Apply autonomous resolution or escalate to sidekick mode
-5. Log all actions and results
-6. Continue workflow
-
-### Enforcement
-Agents must follow this checklist after every update. Failure to do so is a protocol violation and must be documented and escalated.
-
-# SUNNO Logic Instructions
-#
+## Audit, Error Handling, and Escalation
+After any update, change, or creation of any SUNNO instruction file (logic.md, workflow.md, protocol.md, guidelines.md, tools.md, automation.md, security.md), immediately enforce and repair the logic in all instruction files to guarantee a hardcore audit and automated test is run. The agent must:
+  - Audit triggers and scope
+  - Error handling and iteration limits
+  - Escalation criteria and sidekick integration
+  - Logging requirements
+## Audit, Error Handling, and Escalation
+All audit, error handling, and escalation logic is now centralized in `protocol.md`. After any update, change, or creation of any SUNNO instruction file, immediately enforce and repair the logic in all instruction files to guarantee a hardcore audit and automated test is run, referencing `protocol.md` for unified procedures.
 # Initiation & Audit-to-Action Protocol
 # - Upon session start or any workflow initiation, the agent must immediately trigger a logic audit of all workflow, instruction, and prompt files.
 # - The audit must check for recursion, contradiction, deadlock, and ambiguity in all steps, referencing the protocols below.
@@ -29,6 +15,16 @@ Agents must follow this checklist after every update. Failure to do so is a prot
 # - The agent must never halt or prompt the user for clarification. If any issue is detected, resolve or escalate per protocol, then continue processing.
 # - Example session start sequence:
 #   1. Initiation prompt received
+## Initiation & Audit-to-Action Protocol
+- Upon session start or any workflow initiation, the agent must immediately trigger a logic audit of all workflow, instruction, and prompt files, referencing `protocol.md` for audit, error handling, and escalation logic.
+- The audit must check for recursion, contradiction, deadlock, and ambiguity in all steps, per `protocol.md`.
+- After documenting audit results, the agent must always proceed to the next workflow step, using autonomous resolution or escalation as needed, per `protocol.md`. The audit is never a blocking step.
+- The agent must never halt or prompt the user for clarification. If any issue is detected, resolve or escalate per `protocol.md`, then continue processing.
+#
+# Summary of Changes (July 27, 2025)
+# - Centralized audit, error handling, and escalation logic in protocol.md
+# - Removed redundant and conflicting logic
+# - Updated references to protocol.md for unified triggers, limits, and escalation paths
 #   2. Logic audit triggered
 #   3. Results documented
 #   4. Workflow continues (autonomous or escalated)
@@ -81,6 +77,7 @@ If all logic branches are blocked, the agent must attempt a forced resolution (e
 
 ## Hardcore Audit & Test Protocol
 - After every file change or update, agents must follow the Post-Update Hardcore Audit & Test Checklist above. This includes triggering a hardcore audit and test of all workflow, instruction, and prompt files, checking for recursion, contradiction, deadlock, ambiguity, and tool compliance. All results must be documented, and autonomous resolution or escalation protocols must be enforced. No user prompt is allowed; workflow must continue regardless of findings.
+- After audit, agents must run automated functional tests for all tools and workflow steps, auto-fix any failures, and retest until all pass or iteration limit is reached. All changes, fixes, and test results must be logged for compliance.
 
 ## Logic Audit Results & Refinements (2025-07-27)
 ### Logic Audit Output Formatting (2025-07-27)
@@ -140,3 +137,21 @@ All events documented, no user prompts issued, and escalation protocols followed
 Update this section as new audit results, failure modes, or refinements are discovered. Reference this summary in all SUNNO chatmode markdown files to confirm compliance with logic audit protocols.
 ## Maintenance
 Update this file as new logic patterns, self-corrections, or failure modes are discovered. Reference in all chatmode markdown files to enable logic audit and feedback loop features.
+
+## Post-Enhancement Verification Protocol (2025-07-27)
+
+After every audit, test, or enhancement update, agents must:
+1. Run a post-enhancement verification to confirm all new audit, test, and fix enhancements are fully functional and resilient.
+2. If any enhancement fails, automatically apply fixes and retest until all enhancements pass or the iteration limit (max 10) is reached.
+3. Log all verification results, changes, fixes, and iterations for compliance and audit.
+4. If issues persist after 10 iterations, escalate to sidekick mode and document all unresolved failures.
+5. Reference this protocol in all workflow, automation, and guidelines files to ensure compliance.
+
+## Automated Tool & Workflow Test Protocol (2025-07-27)
+
+After every audit or file change, agents must:
+1. Run automated functional tests for all tools and workflow steps defined in SUNNO chatmode files.
+2. If any tool or workflow step fails, automatically apply fixes and retest until all are fully functional or the iteration limit (max 10) is reached.
+3. Log all changes, fixes, and test results for compliance and audit.
+4. If issues persist after 10 iterations, escalate to sidekick mode and document all unresolved failures.
+5. Reference this protocol in all workflow, automation, and guidelines files to ensure compliance.
