@@ -53,7 +53,7 @@ Based on OWASP's framework, here are the top risks relevant to SUNNO (e.g., chat
 9. **LLM09: Overreliance**
    - Description: Blind trust in outputs leads to errors.
    - SUNNO Relevance: Relying on `problems` without verification.
-   - Mitigations: Cross-verify with human review; use `debug.md` for validation.
+   - Mitigations: Cross-verify with human review; use `diagnostic.md` for validation.
 
 10. **LLM10: Model Theft**
     - Description: Unauthorized model access.

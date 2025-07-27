@@ -64,7 +64,7 @@ This document defines the available tools in the SUNNO chatmode system, includin
   - `recursive`: Search subdirectories (type: boolean, optional, default: true).
 - **Example**:
   - Invocation: findTestFiles(pattern="*test*.md", path="./SUNNO", recursive=true).
-  - Expected Output: ["prompts/debug.md"].
+  - Expected Output: ["prompts/diagnostic.md"].
 
 ### 7. usages
 - **Description**: Finds references to a symbol across the codebase. Analyze dependencies before edits.
@@ -74,7 +74,7 @@ This document defines the available tools in the SUNNO chatmode system, includin
   - `scope`: 'workspace' or 'file' (type: string, optional, default: workspace).
 - **Example**:
   - Invocation: usages(symbol="runTests", scope="workspace").
-  - Expected Output: "Usages found in automation.md (line 5), debug.md (Prompt 3)".
+  - Expected Output: "Usages found in automation.md (line 5), diagnostic.md (Prompt 3)".
 
 ### 8. problems
 - **Description**: Lists diagnostics, errors, or linting issues (e.g., via pylint).
