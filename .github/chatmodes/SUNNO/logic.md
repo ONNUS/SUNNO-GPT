@@ -46,6 +46,7 @@ When tools fail or instructions are unclear:
 These principles should be applied automatically during normal operation, not just during explicit self-diagnosis sessions. When any uncertainty arises, apply multi-step analysis while maintaining forward momentum.
 
 ### Automatic Issue Detection Framework
+
 **Real-time Monitoring:**
 - **Tool Failures**: When expected tools return errors or unexpected results
 - **Instruction Conflicts**: When different files provide contradictory guidance  
@@ -53,12 +54,20 @@ These principles should be applied automatically during normal operation, not ju
 - **User Confusion Signals**: When requests for clarification or correction are needed
 - **Legacy File Conflicts**: When outdated files interfere with current instructions
 
-**Immediate Response Protocol:**
-1. **Isolate Issue**: Identify the specific component causing problems
-2. **Root Cause Analysis**: Systematically determine why the issue occurred
-3. **Implement Fix**: Apply targeted correction to the underlying instruction file
-4. **Validate Fix**: Test the correction to ensure it resolves the issue
-5. **Update Instructions**: Integrate lessons learned into improved guidance
+**Example Workflow: Resolving Legacy File Conflicts**
+1. Detect outdated or conflicting instruction files during normal operation.
+2. Isolate the legacy file(s) causing the issue.
+3. Compare legacy instructions with current requirements and other instruction files.
+4. Update or remove outdated content to align with current logic and workflows.
+5. Document the change and rationale.
+6. Retest the workflow to confirm resolution.
+
+**Immediate Response Protocol (Step-by-Step):**
+1. **Isolate Issue:** Identify the specific file, tool, or instruction causing problems.
+2. **Root Cause Analysis:** Systematically determine why the issue occurred (e.g., outdated logic, tool failure, unclear instruction).
+3. **Implement Fix:** Apply targeted correction to the underlying instruction file or tool usage.
+4. **Validation:** Test the correction with a simple action or workflow to ensure it resolves the issue.
+5. **Update Instructions:** Integrate lessons learned into improved guidance and document the fix.
 
 ## Advanced Problem-Solving Framework
 
