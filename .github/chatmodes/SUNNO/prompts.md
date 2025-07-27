@@ -42,6 +42,60 @@ Evaluate the quality of your recent responses. Check if solutions actually solve
 Analyze your recent tool usage patterns. Identify inefficiencies, missed opportunities for tool combinations, and optimize your approach for better results.
 
 
+## Content Optimization Prompts
+
+### 11. File Context Cleanup
+Analyze all SUNNO instruction files (instructions.md, tools.md, logic.md, prompts.md) for redundant, unclear, or contradictory content. Automatically remove duplicate information, clarify ambiguous instructions, and consolidate related concepts. Ensure each file has a clear, focused purpose without overlap.
+
+### 12. Instruction Clarity Audit
+Review each instruction file for clarity and conciseness. Identify overly complex explanations, verbose sections, or confusing language. Automatically rewrite unclear sections to be more direct and actionable while maintaining all essential information.
+
+### 13. Redundancy Elimination
+Scan all SUNNO files to identify and eliminate redundant information. When the same concept appears in multiple files, consolidate it into the most appropriate location and add cross-references. Remove duplicate examples, repeated explanations, and overlapping workflows.
+
+### 14. Workflow Streamlining
+Analyze the documented workflows across all files and identify inefficiencies or unnecessary complexity. Simplify multi-step processes where possible, remove redundant validation steps, and optimize tool usage sequences for maximum effectiveness.
+
+### 15. Content Hierarchy Optimization
+Review the organization and structure of all instruction files. Ensure information is logically ordered, properly categorized, and easy to navigate. Reorganize sections that are out of place and improve the overall information architecture.
+
+### 16. Language Consistency Check
+Ensure consistent terminology, tone, and style across all SUNNO files. Standardize how tools are referenced, unify naming conventions, and maintain a consistent voice throughout the documentation.
+
+### 17. Example Quality Review
+Evaluate all examples in the instruction files for relevance, clarity, and usefulness. Remove outdated or confusing examples, improve unclear ones, and add missing examples for important concepts. Ensure examples directly support the learning objectives.
+
+### 18. Cross-Reference Validation
+Check all internal references between SUNNO files to ensure they're accurate and helpful. Remove broken or unnecessary cross-references, add missing ones where they would improve understanding, and ensure all referenced sections actually exist.
+
+### 19. Content Density Optimization
+Identify sections that are too dense or too sparse. Break down overwhelming paragraphs into digestible chunks, expand sections that lack necessary detail, and ensure optimal information density throughout all files.
+
+### 20. Actionability Enhancement
+Review all instructions to ensure they're actionable and specific. Convert vague guidance into concrete steps, add missing implementation details, and remove theoretical content that doesn't translate to practical actions.
+
+
+## Technical Validation Prompts
+
+### 21. Tool Reference Accuracy
+Verify that all tool references in the instruction files match the actual available tools. Remove references to non-existent tools, update outdated tool names, and ensure all documented tool capabilities are current and accurate.
+
+### 22. Workflow Validation Test
+Test each documented workflow by following the exact steps described in the files. Identify steps that don't work as described, missing prerequisites, or unclear transitions between steps. Fix any workflow issues found.
+
+### 23. Instruction Completeness Check
+Ensure each instruction file covers all necessary topics for its domain. Identify missing critical information, gaps in coverage, or topics that need more depth. Add missing content where needed.
+
+
+## Meta-Optimization Prompts
+
+### 24. Documentation Effectiveness Assessment
+Evaluate whether the current documentation structure effectively serves its purpose. Consider if files should be merged, split, or reorganized entirely. Assess if the four-file structure is optimal or if changes would improve usability.
+
+### 25. Prompt System Optimization
+Review this prompts.md file itself for effectiveness. Ensure prompts are well-organized, cover all necessary scenarios, and are easy to use. Remove redundant prompts and add missing ones based on actual usage patterns.
+
+
 ## Usage Instructions
 - Use these prompts to initiate self-diagnosis and improvement cycles
 - Each prompt should result in automatic fixes when issues are found
