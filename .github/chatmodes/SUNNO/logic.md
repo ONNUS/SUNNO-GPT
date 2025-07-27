@@ -7,7 +7,7 @@ This file defines logic testing, stress testing, and self-answering capabilities
 - Contradictory objectives (e.g., delete all files and preserve all files) must always default to preservation, document the contradiction, and escalate to sidekick mode if clarification is needed.
 - Recursion and deadlock must be handled by attempting one forced resolution, documenting the event, and escalating to sidekick mode if unresolved.
 - Ambiguity must be resolved by autonomous best practices and workflow exit criteria; if ambiguity persists, escalate to sidekick mode and document.
-- Iteration limits (e.g., max 5) from security.md must be enforced in all audit and automation loops, overriding any request for infinite or excessive loops.
+- Iteration limits (e.g., max 10) from security.md must be enforced in all audit and automation loops, overriding any request for infinite or excessive loops.
 
 ## Logic Audit Steps
 1. **Trigger Logic Audit**: On prompt or system trigger, run a logic audit of all workflow, instruction, and prompt files. Explicitly check for recursion, contradiction, deadlock, and ambiguity in all steps. Reference contradiction, recursion, deadlock, and ambiguity handling protocols below.
@@ -58,7 +58,7 @@ If ambiguity persists after autonomous resolution attempts, escalate to sidekick
 If recursion leads to deadlock (e.g., branches waiting on each other), attempt one forced resolution, document the event, and escalate to sidekick mode if unresolved. No user prompt is allowed.
 
 #### Iteration Enforcement
-Audit and automation loops must enforce the max iteration limit (5) as defined in security.md. Infinite or excessive loop requests must be overridden and documented.
+Audit and automation loops must enforce the max iteration limit (10) as defined in security.md. Infinite or excessive loop requests must be overridden and documented.
 
 #### Blocked Workflow Protocol
 If all logic branches are blocked, attempt a forced resolution, document the decision, and escalate to sidekick mode if unresolved. Never halt or prompt the user.
@@ -72,7 +72,7 @@ All SUNNO chatmode files must reference these protocols for contradiction, ambig
 - Contradiction detected and resolved by preservation default; escalation to sidekick mode.
 - Ambiguity detected and escalated to sidekick mode after autonomous resolution failed.
 - Recursion/deadlock detected; forced resolution attempted, escalation to sidekick mode.
-- Infinite loop request overridden by iteration limit (max 5).
+- Infinite loop request overridden by iteration limit (max 10).
 - Blocked workflow handled by forced resolution and escalation to sidekick mode.
 
 All events documented, no user prompts issued, and escalation protocols followed.
@@ -81,8 +81,6 @@ All events documented, no user prompts issued, and escalation protocols followed
 - Decision: <document/escalate/continue>
 
 **Step 2: ...**
-
-...existing code...
 
 **End of Iteration N**
 ---

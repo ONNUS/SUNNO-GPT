@@ -43,7 +43,7 @@ This document defines the workflow logic for AI agents in SUNNO chatmodes, focus
 
 9.  **Automated Security Checks**
     - Before executing actions (especially file edits, code execution, or automation loops), the agent runs security checks per `security.md`.
-    - It must enforce iteration limits (max 5) for automation loops to prevent denial of service.
+    - It must enforce iteration limits (max 10) for automation loops to prevent denial of service.
 
 10. **Comprehensive Logging**
     - The agent logs all questions, options, scores, decisions, actions, errors, and sidekick interactions for audit and compliance.

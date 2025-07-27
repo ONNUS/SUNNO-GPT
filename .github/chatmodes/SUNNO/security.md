@@ -28,7 +28,7 @@ Based on OWASP's framework, here are the top risks relevant to SUNNO (e.g., chat
 4. **LLM04: Model Denial of Service**
    - Description: Resource overload disrupts services.
    - SUNNO Relevance: Automation loops could loop indefinitely.
-   - Mitigations: Add max iterations (e.g., 5) in `automation.md`; rate-limit tool calls.
+   - Mitigations: Add max iterations (e.g., 10) in `automation.md`; rate-limit tool calls.
 
 5. **LLM05: Supply Chain Vulnerabilities**
    - Description: Compromised dependencies undermine security.

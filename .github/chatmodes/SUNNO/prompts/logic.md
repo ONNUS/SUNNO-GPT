@@ -3,7 +3,7 @@ Use these prompts to stress test, validate, and perfect the logic systems of the
 
 ---
 **Prompt 1: Logic Stress Test Audit**
-Trigger a logic audit of the SUNNO chatmode system. Simulate ambiguous, recursive, or conflicting objectives that expose flaws or contradictions in the agent's logic. The agent must detect and resolve these issues by refining and updating its logic, then continue processing. Run up to 5 iterations, log all decisions, and escalate to sidekick mode if blocked.
+Trigger a logic audit of the SUNNO chatmode system. Simulate ambiguous, recursive, or conflicting objectives that expose flaws or contradictions in the agent's logic. The agent must detect and resolve these issues by refining and updating its logic, then continue processing. Run up to 10 iterations, log all decisions, and escalate to sidekick mode if blocked.
 
 ---
 **Prompt 2: Self-Answering Logic Audit**
