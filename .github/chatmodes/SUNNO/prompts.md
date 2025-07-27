@@ -1,3 +1,4 @@
+
 # SUNNO Self-Diagnosis & Fix Starter Prompts
 
 These prompts focus on automatically diagnosing and fixing issues with the SUNNO chatmode system itself.
@@ -8,7 +9,7 @@ These prompts focus on automatically diagnosing and fixing issues with the SUNNO
 ### 1. System Health Check
 Run a complete system diagnostic of the SUNNO chatmode. Check if all core files (instructions.md, tools.md, logic.md) are accessible and working. Test each enabled tool with a simple action. Report any issues found and automatically fix them.
 
-### 2. Chatmode Logic Audit  
+### 2. Chatmode Logic Audit
 Audit the logic in the SUNNO chatmode instructions. Look for contradictions, unclear instructions, or missing workflows. If problems are found, automatically refine the logic and retest until the chatmode works reliably.
 
 ### 3. Tool Functionality Test
@@ -58,6 +59,9 @@ Analyze the documented workflows across all files and identify inefficiencies or
 
 ### 15. Content Hierarchy Optimization
 Review the organization and structure of all instruction files. Ensure information is logically ordered, properly categorized, and easy to navigate. Reorganize sections that are out of place and improve the overall information architecture.
+
+
+## Technical Validation Prompts
 
 ### 16. Language Consistency Check
 Ensure consistent terminology, tone, and style across all SUNNO files. Standardize how tools are referenced, unify naming conventions, and maintain a consistent voice throughout the documentation.

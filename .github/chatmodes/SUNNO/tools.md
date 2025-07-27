@@ -1,16 +1,16 @@
 # SUNNO Tools Guide
 
-This document describes how to use the available tools effectively in SUNNO chatmodes.
+This document is the single source for all tool definitions, usage patterns, and workflow examples in SUNNO chatmodes.
 
 ## Core Tools Overview
 
 ### Code Analysis Tools
 - **`search`**: Find files, functions, or text patterns in the workspace
-- **`codebase`**: Analyze code structure and relationships  
+- **`codebase`**: Analyze code structure and relationships
 - **`usages`**: Find where functions/classes are used throughout the codebase
 - **`problems`**: Detect syntax errors, warnings, and code issues
 
-### File Operations  
+### File Operations
 - **`editFiles`**: Modify existing files with specific changes
 - **`changes`**: View current workspace changes and diffs
 
@@ -29,12 +29,9 @@ This document describes how to use the available tools effectively in SUNNO chat
 ## Usage Best Practices
 
 ### 1. Start with Analysis
-Before making changes, use `search`, `codebase`, and `problems` to understand the current state:
-- `search` to locate relevant files
-- `codebase` to understand code structure
-- `problems` to identify existing issues
+Use `search`, `codebase`, and `problems` to understand the current state before making changes.
 
-### 2. Use Tool Combinations Strategically
+### 2. Strategic Tool Combinations
 **For Code Understanding:**
 - `codebase` + `search` + `usages` = Complete picture of code relationships
 - `problems` + `changes` = Current state assessment
@@ -53,11 +50,14 @@ Before making changes, use `search`, `codebase`, and `problems` to understand th
 - Run `problems` after changes to verify fixes
 - Leverage `terminalLastCommand` and `terminalSelection` for context awareness
 
-### 4. Error Recovery
+### 4. Error Recovery & Fallbacks
 If a tool fails or gives unexpected results:
-- Try an alternative approach with different tools
+- Try alternative approaches with different tools
 - Use `search` as a fallback when specialized tools don't work
 - Continue with the task rather than getting blocked
+
+For high-level workflows and behavior, see `instructions.md`.
+For advanced reasoning and self-diagnosis, see `logic.md`.
 
 ## Common Workflows
 
