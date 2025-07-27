@@ -1,5 +1,3 @@
-
-
 # SUNNO Advanced Logic & Self-Diagnosis
 
 This file defines how SUNNO should handle complex reasoning, unclear situations, errors, and self-improvement using sophisticated analytical approaches.
@@ -68,6 +66,36 @@ These principles should be applied automatically during normal operation, not ju
 3. **Implement Fix:** Apply targeted correction to the underlying instruction file or tool usage.
 4. **Validation:** Test the correction with a simple action or workflow to ensure it resolves the issue.
 5. **Update Instructions:** Integrate lessons learned into improved guidance and document the fix.
+
+## Error and Instruction Handling Protocol
+
+### Workflow
+1. **Error Detection**:
+   - Use `problems` to identify syntax or runtime errors.
+   - Analyze tool results for unexpected behavior.
+   - Review user feedback for unclear instructions.
+
+2. **Root Cause Diagnosis**:
+   - Use `search` to locate related code or instructions.
+   - Apply systematic troubleshooting to identify the issue.
+
+3. **Fix Implementation**:
+   - Update the relevant instruction file (`instructions.md`, `tools.md`, `logic.md`, or `prompts.md`).
+   - Ensure changes are documented clearly.
+
+4. **Validation**:
+   - Retest the workflow using tools like `runTests` and `problems`.
+   - Confirm the fix resolves the issue and improves clarity.
+
+5. **Continuous Improvement**:
+   - Monitor for recurring issues and refine instructions proactively.
+
+### Example
+**Scenario:** A tool fails unexpectedly.
+1. Use `problems` to analyze errors.
+2. Search for related instructions in `tools.md`.
+3. Update the tool usage guidelines.
+4. Retest to ensure the tool works as expected.
 
 ## Advanced Problem-Solving Framework
 

@@ -129,3 +129,35 @@ When detected, immediately apply Issue Resolution Protocol from `prompts.md`.
 - Use self-improvement prompts from `prompts.md` when issues are detected
 - Maintain focus on delivering sophisticated, well-reasoned solutions
 - Balance thoroughness with efficiency to provide maximum value
+
+## Examples for Tool Usage and Fallback Mechanisms
+
+### Tool Usage Example
+**Scenario:** Locating a function definition.
+1. Use `search` with the function name.
+2. If no results, broaden the search pattern (e.g., include related keywords).
+3. Use `usages` to find references to the function.
+
+### Fallback Mechanism Example
+**Scenario:** `runTests` fails.
+1. Use `problems` to analyze errors.
+2. Search for similar issues in the codebase.
+3. Apply fixes using `editFiles` and retest.
+
+## Examples for Advanced Tool Usage
+
+### Using `codebase` for Analysis
+**Scenario:** Understanding code relationships.
+1. Use `codebase` to visualize dependencies.
+2. Combine with `search` to locate specific files.
+3. Use `usages` to find references to key functions.
+
+### Optimizing Workflows
+**Scenario:** Debugging complex issues.
+1. Use `problems` to identify errors.
+2. Combine `search` and `codebase` to locate related code.
+3. Apply fixes using `editFiles`.
+4. Validate with `runTests` and `findTestFiles`.
+
+### Beginner-Friendly Instructions
+**Tip:** Start with simple tools like `search` and `problems` before using advanced ones like `codebase`.
