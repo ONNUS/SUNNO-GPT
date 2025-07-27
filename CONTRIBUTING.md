@@ -1,6 +1,6 @@
 # Contributing to SUNNO-GPT
 
-Thank you for your interest in contributing to SUNNO-GPT! This guide will help you get started.
+Thank you for your interest in contributing to SUNNO-GPT! This simplified guide will help you get started.
 
 ## Development Setup
 
@@ -15,141 +15,103 @@ Thank you for your interest in contributing to SUNNO-GPT! This guide will help y
    - Ensure you have GitHub Copilot access
    - Place the chatmode files in your `.github/chatmodes/` directory
 
-## Architecture Guidelines
+## Simplified Architecture
 
-### Modular Design
-- New Features: Create separate `.md` files in the `SUNNO/` folder
-- Don't Modify: Avoid changing `instructions.md` for new features
-- Reference System: Update chatmode files to reference new modules
-
-### File Organization
+### Core Files
 ```
 SUNNO/
-├── [feature].md         # Feature-specific instructions
-├── prompts/
-│   └── [feature].md     # Starter prompts for testing
-└── _py_/
-    └── [feature]/       # Python utilities (if needed)
+├── instructions.md         # Core behavior and capabilities
+├── tools.md               # Tool usage guide
+├── logic.md              # Self-diagnosis and error handling
+└── prompts.md              # Self-improvement prompts
 ```
 
-## Contributing Process
+### Contributing Process
 
-### 1. Planning
-- Check existing issues and discussions
-- Create an issue for new features or major changes
-- Use SUNNO sidekick mode for design review
+#### 1. Testing Your Changes
+1. Test with the starter prompts in `prompts.md`
+- Run system diagnostics to ensure core functionality works
+- Test tool usage with the workflows in `tools.md`
+- Verify self-diagnosis capabilities from `logic.md`
 
-### 2. Development
-- Follow the modular architecture
-- Add starter prompts for testing your changes
-- Include security considerations per `security.md`
-- Add comprehensive logging hooks
+#### 2. Making Improvements
+- **For Core Behavior**: Update `instructions.md`
+- **For Tool Usage**: Update `tools.md`  
+- **For Self-Diagnosis**: Update `logic.md`
+- **For Testing**: Add new prompts to `prompts.md`
 
-### 3. Testing
-- Use starter prompts in `prompts/` folder
-- Test with both SUNNO-4 and SUNNO-4o models
-- Run security audits
-- Validate workflow integration
+#### 3. Validation
+- Test with both SUNNO-4 and SUNNO-4o chatmodes
+- Ensure changes improve effectiveness without adding complexity
+- Verify that self-diagnosis still works after changes
 
-### 4. Documentation
-- Update relevant instruction files
-- Add usage examples
-- Document any new tools or capabilities
-- Include version history in modified files
+## Guidelines
 
-## Code Standards
+### Keep It Simple
+- Focus on making SUNNO more effective, not adding features
+- Prefer clear, direct instructions over complex workflows
+- Ensure any changes improve actual results in VS Code
 
-### Python Code
-- Follow PEP 8 style guidelines
-- Include docstrings for all functions
-- Use type hints where appropriate
-- Add logging hooks for transparency
+### Test Thoroughly
+- Use real development scenarios to test changes
+- Run the diagnostic prompts after making modifications  
+- Ensure both chatmodes work identically
 
-### Markdown Documentation
-- Use consistent formatting
-- Include file path comments
-- Add version history sections
-- Reference related files appropriately
-
-### Security
-- Follow OWASP LLM guidelines
-- Include input validation
-- Add sanitization for risky operations
-- Document security implications
-
-## Testing Guidelines
-
-### Automated Testing
-```python
-# Example test structure
-from SUNNO._py_.hooks import log_event
-
-def test_feature():
-    log_event("Test", "Feature", "Testing new functionality")
-    # Test implementation
-    assert result == expected
-```
-
-### Manual Testing
-- Use starter prompts for validation
-- Test edge cases and error conditions
-- Verify sidekick integration
-- Check audit trail completeness
-
-## Sidekick Collaboration
-
-When developing complex features:
-
-```
-Activate sidekick mode. Sidekick, please review my proposed changes to [feature]. 
-Audit for security, efficiency, and integration with existing SUNNO modules.
-```
+### Documentation
+- Update relevant files when making changes
+- Keep instructions clear and focused
+- Add examples when helpful
 
 ## Submission Guidelines
 
 ### Pull Request Process
 1. Create a descriptive PR title
-2. Fill out the PR template
-3. Include test results
-4. Document any breaking changes
-5. Add screenshots for UI changes
+2. Explain what problem your change solves
+3. Include test results using starter prompts
+4. Show before/after effectiveness if possible
 
 ### PR Template
 ```markdown
-## Description
-Brief description of changes
+## Problem Solved
+Brief description of what wasn't working well
 
 ## Changes Made
-- [ ] Added new feature
-- [ ] Updated documentation
-- [ ] Fixed bug
-- [ ] Added tests
+- [ ] Updated instructions.md
+- [ ] Updated tools.md  
+- [ ] Updated logic.md
+- [ ] Added/updated starter prompts
 
 ## Testing
 - [ ] Tested with SUNNO-4
 - [ ] Tested with SUNNO-4o
-- [ ] Ran security audit
-- [ ] Validated workflow integration
+- [ ] Ran diagnostic prompts
+- [ ] Verified in real development scenario
 
-## Security Review
-- [ ] Follows OWASP guidelines
-- [ ] Includes input validation
-- [ ] No privilege escalation risks
-- [ ] Audit trail maintained
+## Results
+Describe how this makes SUNNO more effective
 ```
 
-## Community Guidelines
+## Testing with Starter Prompts
 
-- Be respectful and inclusive
-- Provide constructive feedback
-- Help others learn and grow
-- Follow the code of conduct
+Before submitting changes, run these key tests:
+
+1. **System Health Check**: Verify all core functionality works
+2. **Tool Functionality Test**: Ensure all tools work as expected
+3. **Self-Improvement Loop**: Test that SUNNO can improve itself
+4. **Real Development Scenario**: Use SUNNO for actual coding tasks
 
 ## Getting Help
 
-- Documentation: Check the `SUNNO/` folder
-- Issues: Search existing issues first
-- Discussions: Use GitHub Discussions for questions
-- Sidekick Mode: Use SUNNO's collaborative features
+- **Documentation**: Check the simplified files in `SUNNO/`
+- **Issues**: Search existing issues first
+- **Testing**: Use the starter prompts for validation
 
-Thank you for contributing to SUNNO-GPT! 🚀
+## Focus Areas
+
+We're particularly interested in contributions that:
+- Make SUNNO more effective at debugging and development tasks
+- Improve self-diagnosis and automatic improvement capabilities
+- Simplify and clarify instructions without losing functionality
+- Add useful starter prompts for common scenarios
+
+Thank you for helping make SUNNO more effective! 🚀

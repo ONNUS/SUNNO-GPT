@@ -1,122 +1,103 @@
 # SUNNO-GPT
 
-SUNNO (Structured Unified Neural Network Operations) is a modular AI agent framework designed for GitHub Copilot Chat Modes. It provides intelligent automation for debugging, code review, testing, and collaborative workflows with built-in security, logging, and sidekick collaboration features.
+SUNNO (Simplified Unified Neural Network Operations) is a streamlined AI chatmode for GitHub Copilot designed to enhance GPT-4.1 and GPT-4o performance in VS Code. 
 
-## Features
+## Core Features
 
-- 🤖 Multi-Model Support: Compatible with GPT-4.1 and GPT-4o
-- 🔧 Advanced Tool Integration: File editing, testing, code analysis, and GitHub operations
-- 🛡️ Security-First Design: OWASP LLM compliance with automated security checks
-- 🔄 Automated Workflows: Self-healing test loops and dependency analysis
-- 👥 Sidekick Collaboration: Multi-agent review and feedback system
-- 📊 Comprehensive Logging: Centralized audit trails and decision tracking
-- 🧩 Modular Architecture: Extensible instruction system
+- 🎯 **Proactive Problem Solving**: Automatically fixes issues rather than just reporting them
+- 🔧 **Intelligent Tool Usage**: Effectively uses VS Code tools for debugging and development
+- 🧠 **Self-Improvement**: Automatically refines its approach when instructions aren't working well
+- ⚡ **Focused Action**: Prioritizes getting things done over complex workflows
 
 ## Quick Start
 
-1. **Setup GitHub Copilot Chat Mode**:
-   - Place the `.chatmode.md` files in your `.github/chatmodes/` directory
-   - Configure your preferred model (SUNNO-4 or SUNNO-4o)
-
-2. **Activate SUNNO**:
-   ```
-   @workspace Use SUNNO-4 chatmode for this session
-   ```
-
-3. **Run Diagnostics**:
-   ```
-   Run a full diagnostic and test all enabled tools
-   ```
+1. **Setup**: Place the chatmode files in your `.github/chatmodes/` directory
+2. **Activate**: Use `@workspace /SUNNO-4` or `@workspace /SUNNO-4o` in GitHub Copilot Chat
+3. **Start Working**: Begin with any coding task - SUNNO will enhance your workflow automatically
 
 ## Architecture
 
 ```
 .github/chatmodes/
 ├── SUNNO-4.chatmode.md      # GPT-4.1 configuration
-├── SUNNO-4o.chatmode.md     # GPT-4o configuration
-└── SUNNO/                   # Modular instruction system
-    ├── instructions.md      # Core instructions
-    ├── workflow.md          # Collaborative workflow logic
-    ├── tools.md            # Tool documentation
-    ├── security.md         # OWASP LLM compliance
-    ├── sidekick.md         # Multi-agent collaboration
-    ├── automation.md       # Automated debugging loops
-    ├── guidelines.md       # Best practices
-    ├── logic.md           # Self-correction logic
-    ├── _py_/              # Python utilities
-    └── prompts/           # Starter prompts
+├── SUNNO-4o.chatmode.md     # GPT-4o configuration  
+└── SUNNO/                   # Core instruction files
+    ├── instructions.md      # Core behavior and capabilities
+    ├── tools.md            # Tool usage guide
+    ├── logic.md            # Self-diagnosis and error handling
+    └── prompts.md          # Self-improvement prompts
 ```
 
-## Core Modules
+## Core Files
 
-### 🔧 Tools System
-- File Operations: Search, edit, analyze dependencies
-- Testing: Automated test running and fix loops
-- GitHub Integration: Repository operations and PR management
-- Diagnostics: Problem detection and resolution
+### `instructions.md`
+Defines SUNNO's core behavior: being proactive, self-diagnostic, focused, and decisive with sophisticated reasoning capabilities.
 
-### 🛡️ Security Framework
-- OWASP Top 10 LLM compliance
-- Input/output sanitization
-- Automated security checks
-- Privilege escalation prevention
+### `tools.md`  
+Practical guide for using VS Code tools effectively - search, analysis, editing, testing, and GitHub operations.
 
-### 👥 Sidekick Collaboration
-- Multi-agent review system
-- Structured feedback loops
-- Decision documentation
-- Collaborative auditing
+### `logic.md`
+Advanced self-diagnosis protocols for handling complex reasoning, unclear situations, and continuous improvement.
 
-### 📊 Logging & Audit
-- Centralized event logging
-- Decision tracking
-- Compliance monitoring
-- Audit trail maintenance
+### `prompts.md`
+Ready-to-use prompts for system diagnostics, self-improvement, and debugging workflows.
+
+## Key Capabilities
+
+### Debugging Workflow
+- Automatically identifies and fixes code issues
+- Runs tests and validates fixes
+- Continues until problems are resolved
+
+### Code Review
+- Analyzes changes for quality and impact
+- Suggests improvements automatically
+- Ensures tests still pass
+
+### Self-Diagnosis
+- Monitors its own effectiveness
+- Refines instructions when they're not working well
+- Adapts approach based on results
+
+## Model Differences
+
+Both SUNNO-4 and SUNNO-4o use identical instructions but leverage their respective model strengths:
+- **SUNNO-4**: Enhanced with terminal access for complex debugging
+- **SUNNO-4o**: Optimized for analysis and planning tasks
 
 ## Usage Examples
 
-### Automated Debugging
+### System Health Check
 ```
-Debug the failing tests and fix all issues automatically
-```
-
-### Code Review
-```
-Review this pull request and suggest improvements with sidekick collaboration
+Run a complete system diagnostic of the SUNNO chatmode. Test all tools and fix any issues found.
 ```
 
-### Security Audit
+### Debug Session
 ```
-Run a security audit of the codebase following OWASP guidelines
-```
-
-### Workflow Testing
-```
-Test the complete workflow logic and report any issues
+Start a debugging session. Find and fix all issues in the current codebase.
 ```
 
-## Configuration
+### Self-Improvement
+```
+Analyze your current performance and automatically implement improvements to be more effective.
+```
 
-### Model Selection
-- SUNNO-4: GPT-4.1 with terminal access for complex debugging
-- SUNNO-4o: GPT-4o optimized for research and planning
+## Getting Better Results
 
-### Tool Customization
-Edit the `tools` array in the chatmode files to enable/disable specific capabilities.
+SUNNO is designed to improve through use:
+- It learns from unclear instructions and refines its approach
+- Automatically adjusts when tools don't work as expected
+- Focuses on practical results over complex processes
+- Demonstrates sophisticated reasoning and analysis
 
 ## Contributing
 
-1. Adding Features: Create new `.md` files in the `SUNNO/` folder
-2. Testing: Use starter prompts in `prompts/` for validation
-3. Security: Follow guidelines in `security.md`
-4. Documentation: Update relevant instruction files
+To enhance SUNNO:
+1. Test with the starter prompts in `prompts.md`
+2. Update the core instruction files based on results
+3. Keep changes focused on improving effectiveness
+4. Test changes with real development workflows
 
 ## License
 
 MIT License - see [LICENSE](LICENSE) file for details.
-
-## Support
-
-- 📖 Documentation: See `SUNNO/` folder for detailed instructions
-- 🐛 Issues: Use GitHub Issues for bug reports
-- 💡 Feature Requests: Submit via GitHub Discussions
