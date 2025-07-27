@@ -1,6 +1,6 @@
-# SUNNO Advanced Logic & Self-Diagnosis
+# AI Assistant Advanced Logic & Self-Diagnosis
 
-This file centralizes all advanced reasoning, self-diagnosis, error recovery, and improvement protocols for SUNNO.
+This file centralizes all advanced reasoning, self-diagnosis, error recovery, and improvement protocols for AI Assistant.
 
 ## Advanced Reasoning Principles
 

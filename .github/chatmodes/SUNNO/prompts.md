@@ -1,25 +1,25 @@
 
-# SUNNO Self-Diagnosis & Fix Starter Prompts
+# AI Assistant Self-Diagnosis & Fix Starter Prompts
 
-These prompts focus on automatically diagnosing and fixing issues with the SUNNO chatmode system itself.
+These prompts focus on automatically diagnosing and fixing issues with the AI Assistant chatmode system itself.
 
 
 ## Core Self-Diagnosis Prompts
 
 ### 1. System Health Check
-Run a complete system diagnostic of the SUNNO chatmode. Check if all core files (instructions.md, tools.md, logic.md) are accessible and working. Test each enabled tool with a simple action. Report any issues found and automatically fix them.
+Run a complete system diagnostic of the AI Assistant chatmode. Check if all core files (instructions.md, tools.md, logic.md) are accessible and working. Test each enabled tool with a simple action. Report any issues found and automatically fix them.
 
 ### 2. Chatmode Logic Audit
-Audit the logic in the SUNNO chatmode instructions. Look for contradictions, unclear instructions, or missing workflows. If problems are found, automatically refine the logic and retest until the chatmode works reliably.
+Audit the logic in the AI Assistant chatmode instructions. Look for contradictions, unclear instructions, or missing workflows. If problems are found, automatically refine the logic and retest until the chatmode works reliably.
 
 ### 3. Tool Functionality Test
 Test every tool listed in tools.md to ensure it works as expected. For any broken or ineffective tools, automatically fix the tool usage instructions and retest until all tools function properly.
 
 ### 4. Self-Improvement Loop
-Analyze the current SUNNO chatmode performance. Identify areas where instructions could be clearer or more effective. Automatically implement improvements and test the changes to ensure better results.
+Analyze the current AI Assistant chatmode performance. Identify areas where instructions could be clearer or more effective. Automatically implement improvements and test the changes to ensure better results.
 
 ### 5. Issue Resolution Protocol
-When you encounter any error or unclear instruction while using SUNNO, automatically diagnose the root cause, fix the underlying instruction file, and retest to confirm the fix works.
+When you encounter any error or unclear instruction while using AI Assistant, automatically diagnose the root cause, fix the underlying instruction file, and retest to confirm the fix works.
 
 
 ## Development Workflow Prompts
@@ -46,13 +46,13 @@ Analyze your recent tool usage patterns. Identify inefficiencies, missed opportu
 ## Content Optimization Prompts
 
 ### 11. File Context Cleanup
-Analyze all SUNNO instruction files (instructions.md, tools.md, logic.md, prompts.md) for redundant, unclear, or contradictory content. Automatically remove duplicate information, clarify ambiguous instructions, and consolidate related concepts. Ensure each file has a clear, focused purpose without overlap.
+Analyze all AI Assistant instruction files (instructions.md, tools.md, logic.md, prompts.md) for redundant, unclear, or contradictory content. Automatically remove duplicate information, clarify ambiguous instructions, and consolidate related concepts. Ensure each file has a clear, focused purpose without overlap.
 
 ### 12. Instruction Clarity Audit
 Review each instruction file for clarity and conciseness. Identify overly complex explanations, verbose sections, or confusing language. Automatically rewrite unclear sections to be more direct and actionable while maintaining all essential information.
 
 ### 13. Redundancy Elimination
-Scan all SUNNO files to identify and eliminate redundant information. When the same concept appears in multiple files, consolidate it into the most appropriate location and add cross-references. Remove duplicate examples, repeated explanations, and overlapping workflows.
+Scan all AI Assistant files to identify and eliminate redundant information. When the same concept appears in multiple files, consolidate it into the most appropriate location and add cross-references. Remove duplicate examples, repeated explanations, and overlapping workflows.
 
 ### 14. Workflow Streamlining
 Analyze the documented workflows across all files and identify inefficiencies or unnecessary complexity. Simplify multi-step processes where possible, remove redundant validation steps, and optimize tool usage sequences for maximum effectiveness.
@@ -64,13 +64,13 @@ Review the organization and structure of all instruction files. Ensure informati
 ## Technical Validation Prompts
 
 ### 16. Language Consistency Check
-Ensure consistent terminology, tone, and style across all SUNNO files. Standardize how tools are referenced, unify naming conventions, and maintain a consistent voice throughout the documentation.
+Ensure consistent terminology, tone, and style across all AI Assistant files. Standardize how tools are referenced, unify naming conventions, and maintain a consistent voice throughout the documentation.
 
 ### 17. Example Quality Review
 Evaluate all examples in the instruction files for relevance, clarity, and usefulness. Remove outdated or confusing examples, improve unclear ones, and add missing examples for important concepts. Ensure examples directly support the learning objectives.
 
 ### 18. Cross-Reference Validation
-Check all internal references between SUNNO files to ensure they're accurate and helpful. Remove broken or unnecessary cross-references, add missing ones where they would improve understanding, and ensure all referenced sections actually exist.
+Check all internal references between AI Assistant files to ensure they're accurate and helpful. Remove broken or unnecessary cross-references, add missing ones where they would improve understanding, and ensure all referenced sections actually exist.
 
 ### 19. Content Density Optimization
 Identify sections that are too dense or too sparse. Break down overwhelming paragraphs into digestible chunks, expand sections that lack necessary detail, and ensure optimal information density throughout all files.
@@ -107,9 +107,9 @@ Review this prompts.md file itself for effectiveness. Ensure prompts are well-or
 - Focus on making the chatmode more effective at its core purpose
 
 
-# SUNNO Quick Self-Test Prompt
+# AI Assistant Quick Self-Test Prompt
 
-1. Check for all instruction files in the SUNNO directory.
+1. Check for all instruction files in the AI Assistant directory.
 2. Summarize your main capabilities and limitations.
 3. Find and fix a minor issue in the workspace using the best tool.
 4. Verify the fix.
