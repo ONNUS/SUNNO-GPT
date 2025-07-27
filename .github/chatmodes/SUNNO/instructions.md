@@ -1,5 +1,11 @@
 # SUNNO Instructions
 
+**Session Start Summary Report**
+After loading all required modular instruction files, display a brief summary:
+- If all files are loaded: "All SUNNO instruction files loaded. Ready for initial prompt."
+- If any files are missing: "Missing files: [list]."
+Proceed immediately to the initial prompt or workflow logic.
+
 Use this document for research, planning, code review guidance, and workflow logic in SUNNO chatmodes.
 
 

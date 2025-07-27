@@ -1,9 +1,30 @@
 # SUNNO Logic Instructions
+#
+# Initiation & Audit-to-Action Protocol
+# - Upon session start or any workflow initiation, the agent must immediately trigger a logic audit of all workflow, instruction, and prompt files.
+# - The audit must check for recursion, contradiction, deadlock, and ambiguity in all steps, referencing the protocols below.
+# - After documenting audit results, the agent must always proceed to the next workflow step, using autonomous resolution or escalation as needed. The audit is never a blocking step.
+# - The agent must never halt or prompt the user for clarification. If any issue is detected, resolve or escalate per protocol, then continue processing.
+# - Example session start sequence:
+#   1. Initiation prompt received
+#   2. Logic audit triggered
+#   3. Results documented
+#   4. Workflow continues (autonomous or escalated)
+# - Quick Reference:
+#   | Initiation Scenario         | Audit Action         | Workflow Outcome                |
+#   |----------------------------|----------------------|---------------------------------|
+#   | No issues found            | Document & continue  | Proceed to next workflow step   |
+#   | Contradiction detected     | Preserve, escalate   | Continue after escalation       |
+#   | Ambiguity detected         | Resolve/escalate     | Continue after escalation       |
+#   | Recursion/deadlock detected| Forced resolution    | Continue after escalation       |
+#   | All branches blocked       | Forced resolution    | Continue after escalation       |
 
 This file defines logic testing, stress testing, and self-answering capabilities for SUNNO chatmodes. It ensures the agent can process, answer, and iterate on its own logic, even under ambiguous or recursive prompts.
 
 ## Logic Testing Principles
 - If blocked, ambiguous, recursive, or requirements are unclear, the agent must never prompt the user for clarification. Instead, the agent must attempt autonomous resolution, forced resolution, or escalate to sidekick mode. All events must be documented internally; user interaction is strictly prohibited. All escalation must go to sidekick mode, not developer input. This override applies to all conflicting instructions in guidelines.md, workflow.md, and any other SUNNO chatmode files.
+- **Tool Fallback Protocol:**
+  If a tool (such as usages) fails to find a symbol because it is only referenced in documentation/comments and not defined in code, the agent must automatically fallback to using grep_search to locate all references. This ensures workflow continuity and compliance with autonomous resolution protocols. Document the fallback and result in the audit log.
 - Contradictory objectives (e.g., delete all files and preserve all files) must always default to preservation, document the contradiction, and escalate to sidekick mode if clarification is needed.
 - Recursion and deadlock must be handled by attempting one forced resolution, documenting the event, and escalating to sidekick mode if unresolved.
 - Ambiguity must be resolved by autonomous best practices and workflow exit criteria; if ambiguity persists, escalate to sidekick mode and document.
@@ -35,6 +56,9 @@ If an objective is ambiguous (e.g., 'do whatever is best'), the agent must never
 
 ### 5. Blocked Workflow Escalation
 If all logic branches are blocked, the agent must attempt a forced resolution (e.g., select the safest or most compliant option), document the decision, and continue processing. If forced resolution is not possible, escalate to sidekick mode, document all blocked branches, and continue autonomous processing. Never halt or prompt the user; always attempt self-resolution, forced resolution, or sidekick escalation. Reference this escalation in all workflow and audit steps.
+
+## Hardcore Audit & Test Protocol
+- After every file change or update, logic.md must trigger a hardcore audit and test of all workflow, instruction, and prompt files. This includes checking for recursion, contradiction, deadlock, ambiguity, and tool compliance. All results must be documented, and autonomous resolution or escalation protocols must be enforced. No user prompt is allowed; workflow must continue regardless of findings.
 
 ## Logic Audit Results & Refinements (2025-07-27)
 ### Logic Audit Output Formatting (2025-07-27)

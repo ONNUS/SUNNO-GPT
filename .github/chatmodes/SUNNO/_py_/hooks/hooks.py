@@ -53,7 +53,7 @@ def score_option(agent, option, score, rationale):
 def file_approval_hook(agent, details):
     log_event(agent, "FileApproval", details)
 
-def test_hook(agent, details):
+def log_test_event(agent, details):
     log_event(agent, "Test", details)
 
 def sanitization_hook(agent, details):

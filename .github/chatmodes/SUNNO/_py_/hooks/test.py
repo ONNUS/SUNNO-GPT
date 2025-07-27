@@ -18,8 +18,14 @@ def run_tests():
     question_hook("Agent", "Generated required questions for objective.")
     option_hook("Agent", "Scored options. Selected best solution.")
     file_approval_hook("Agent", "Previewed and approved file creation.")
-    test_hook("Agent", "All tests passed after fix loop.")
     sanitization_hook("Agent", "Sanitized input/output for risky action.")
 
 if __name__ == "__main__":
     run_tests()
+
+# Pytest-compatible test function
+def test_audit_hook():
+    try:
+        audit_hook("TestAgent", "Audit test event.")
+    except Exception as e:
+        assert False, f"audit_hook raised exception: {e}"

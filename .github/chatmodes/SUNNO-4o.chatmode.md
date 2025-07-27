@@ -4,8 +4,12 @@ tools: ['changes', 'codebase', 'editFiles', 'findTestFiles', 'githubRepo', 'prob
 model: "GPT-4o"
 ---
 
-# SUNNO Initialization
-  On first prompt, the agent must automatically load all referenced instruction files (listed below) into context. This ensures features like sidekick mode and security guidelines are always available.
+## Session Start
+1. Load all modular instruction files from /.github/chatmodes/SUNNO/ into context.
+2. After loading all modular instruction files, display a brief summary:
+   - If all files are loaded: "All SUNNO instruction files loaded. Ready for initial prompt."
+   - If any files are missing: "Missing files: [list]."
+   Proceed immediately to the initial prompt or workflow logic.
 
 # SUNNO Modular Instruction System
   This system enables flexible, maintainable, and extensible agent behavior. To add new features, create a new markdown file in the SUNNO folder and reference it below. Do not modify instructions.md for new features.
