@@ -57,42 +57,28 @@ This document defines the available tools in the SUNNO chatmode system, includin
   - Expected Output: "Tests passed: 3/3; Logs: No errors found".
 
 ### 6. findTestFiles
-- **Description**: Locates test files based on patterns (e.g., *_test.py).
-- **Parameters**:
   - `pattern`: Search pattern (type: string, optional, default: standard test conventions).
   - `path`: Root path (type: string, optional, default: workspace root).
   - `recursive`: Search subdirectories (type: boolean, optional, default: true).
-- **Example**:
   - Invocation: findTestFiles(pattern="*test*.md", path="./SUNNO", recursive=true).
   - Expected Output: ["prompts/diagnostic.md"].
 
 ### 7. usages
-- **Description**: Finds references to a symbol across the codebase. Analyze dependencies before edits.
-- **Parameters**:
   - `symbol`: Code symbol (type: string, required).
   - `file_path`: Where symbol is defined (type: string, optional).
   - `scope`: 'workspace' or 'file' (type: string, optional, default: workspace).
-- **Example**:
   - Invocation: usages(symbol="runTests", scope="workspace").
   - Expected Output: "Usages found in automation.md (line 5), diagnostic.md (Prompt 3)".
 
 ### 8. problems
-- **Description**: Lists diagnostics, errors, or linting issues (e.g., via pylint).
-- **Parameters**:
-  - `file_path`: File or directory (type: string, optional, default: all).
   - `severity`: 'error' or 'warning' (type: string, optional).
   - `linter`: Tool to use (type: string, optional).
 - **Example**:
   - Invocation: problems(file_path="automation.md", severity="error").
-  - Expected Output: "Error: Inconsistent indentation (line 10)".
-
-### 9. githubRepo
 - **Description**: Interacts with GitHub repos (e.g., fetch issues, create PRs).
 - **Parameters**:
   - `action`: Operation (e.g., 'list_issues', 'create_pr') (type: string, required).
   - `repo`: Slug (e.g., 'owner/repo') (type: string, required).
-  - `params`: Action-specific (e.g., {'branch': 'main'}) (type: object, optional).
-- **Example**:
   - Invocation: githubRepo(action="create_pr", repo="xai-org/sunno", params={'title': 'Add tools.md', 'body': 'Documentation update'}).
   - Expected Output: "PR created: #42".
 
