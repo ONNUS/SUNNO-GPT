@@ -1,3 +1,25 @@
+## Post-Update Hardcore Audit & Test Checklist
+
+After any file change or update in the SUNNO chatmode system, the agent must:
+1. Immediately trigger a hardcore audit and test of all workflow, instruction, and prompt files.
+2. Check for recursion, contradiction, deadlock, ambiguity, and tool compliance in every file.
+3. Document all audit results, including any issues found and resolutions applied.
+4. Enforce autonomous resolution or escalate to sidekick mode as required by protocols.
+5. Log every audit iteration, decision, and escalation for compliance.
+6. Never prompt the user; always continue workflow regardless of findings.
+7. Reference this checklist in all workflow, automation, and guidelines files to ensure compliance.
+
+### Example Audit & Test Sequence
+1. File change detected (e.g., update to tools.md)
+2. Trigger hardcore audit and test (all SUNNO files)
+3. Document results: recursion, contradiction, deadlock, ambiguity, tool compliance
+4. Apply autonomous resolution or escalate to sidekick mode
+5. Log all actions and results
+6. Continue workflow
+
+### Enforcement
+Agents must follow this checklist after every update. Failure to do so is a protocol violation and must be documented and escalated.
+
 # SUNNO Logic Instructions
 #
 # Initiation & Audit-to-Action Protocol
@@ -58,7 +80,7 @@ If an objective is ambiguous (e.g., 'do whatever is best'), the agent must never
 If all logic branches are blocked, the agent must attempt a forced resolution (e.g., select the safest or most compliant option), document the decision, and continue processing. If forced resolution is not possible, escalate to sidekick mode, document all blocked branches, and continue autonomous processing. Never halt or prompt the user; always attempt self-resolution, forced resolution, or sidekick escalation. Reference this escalation in all workflow and audit steps.
 
 ## Hardcore Audit & Test Protocol
-- After every file change or update, logic.md must trigger a hardcore audit and test of all workflow, instruction, and prompt files. This includes checking for recursion, contradiction, deadlock, ambiguity, and tool compliance. All results must be documented, and autonomous resolution or escalation protocols must be enforced. No user prompt is allowed; workflow must continue regardless of findings.
+- After every file change or update, agents must follow the Post-Update Hardcore Audit & Test Checklist above. This includes triggering a hardcore audit and test of all workflow, instruction, and prompt files, checking for recursion, contradiction, deadlock, ambiguity, and tool compliance. All results must be documented, and autonomous resolution or escalation protocols must be enforced. No user prompt is allowed; workflow must continue regardless of findings.
 
 ## Logic Audit Results & Refinements (2025-07-27)
 ### Logic Audit Output Formatting (2025-07-27)
