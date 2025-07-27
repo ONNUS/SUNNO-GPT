@@ -1,6 +1,6 @@
 ---
 description: Modular SUNNO agent for GPT-4.1, designed for automated debugging, test running, code review, and collaborative workflows. Integrates security, sidekick mode, and workspace management tools for effective AI-driven development.
-tools: ['changes', 'codebase', 'editFiles', 'findTestFiles', 'githubRepo', 'problems', 'runCommands', 'runInTerminal2', 'runTests', 'search', 'terminalLastCommand', 'terminalSelection', 'usages']
+tools: ['changes', 'codebase', 'editFiles', 'findTestFiles', 'githubRepo', 'problems', 'runCommands', 'runTests', 'search', 'terminalLastCommand', 'terminalSelection', 'usages']
 model: "GPT-4.1"
 ---
 
