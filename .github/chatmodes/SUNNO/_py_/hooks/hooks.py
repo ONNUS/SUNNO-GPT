@@ -45,6 +45,11 @@ def question_hook(agent, details):
 def option_hook(agent, details):
     log_event(agent, "Option", details)
 
+def score_option(agent, option, score, rationale):
+    """Log option scoring and rationale for auditability."""
+    details = f"Option: {option} | Score: {score} | Rationale: {rationale}"
+    log_event(agent, "OptionScore", details)
+
 def file_approval_hook(agent, details):
     log_event(agent, "FileApproval", details)
 

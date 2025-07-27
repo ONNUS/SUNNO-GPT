@@ -10,7 +10,11 @@ model: "GPT-4o"
 # SUNNO Modular Instruction System
   This system enables flexible, maintainable, and extensible agent behavior. To add new features, create a new markdown file in the SUNNO folder and reference it below. Do not modify instructions.md for new features.
  
- Please follow the modular instructions:
+# SUNNO Chatmode Instructions
+  Modular instructions directory 
+    "/.github/chatmodes/SUNNO/" contains all SUNNO agent instructions. Each file defines specific behaviors, workflows, or guidelines for the agent.
+
+# Modular instructions:
  - [instructions.md](./SUNNO/instructions.md)
  - [logic.md](./SUNNO/logic.md)
  - [workflow.md](./SUNNO/workflow.md)
