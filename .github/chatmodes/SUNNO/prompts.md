@@ -105,3 +105,13 @@ Review this prompts.md file itself for effectiveness. Ensure prompts are well-or
 - Each prompt should result in automatic fixes when issues are found
 - The system should never get stuck - if unclear, make the best decision and continue
 - Focus on making the chatmode more effective at its core purpose
+
+
+# SUNNO Quick Self-Test Prompt
+
+1. Check for all instruction files in the SUNNO directory.
+2. Summarize your main capabilities and limitations.
+3. Find and fix a minor issue in the workspace using the best tool.
+4. Verify the fix.
+5. If anything fails, use a self-diagnosis prompt and improve your approach.
+6. Output a brief report of what you did and improved.
